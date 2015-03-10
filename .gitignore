@@ -1,0 +1,14 @@
+*.elc
+*.pyc
+elpa
+bookmarks
+eshell
+auto-save-list
+archives
+ac-comphist.dat
+tramp
+url
+ergoemacs-extras
+session.*
+saved-places
+*~
