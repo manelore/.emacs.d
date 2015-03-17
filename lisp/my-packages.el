@@ -26,6 +26,10 @@
     base16-theme
     elpy
     find-file-in-project
+    git-commit-mode
+    git-gutter+
+    git-gutter-fringe+
+    git-rebase-mode
     highlight-indentation
     highlight-symbol
     ido-ubiquitous
@@ -34,7 +38,7 @@
     imenu-anywhere
     jinja2-mode
     lua-mode
-    ; magit
+    magit
     neotree
     pyvenv
     rainbow-delimiters

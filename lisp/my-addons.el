@@ -41,10 +41,10 @@
 (setq-default save-place t)
 
 ;; git
-; (require 'magit)
-; (add-hook 'magit-mode-hook 'magit-load-config-extensions)
-; (require 'git-gutter-fringe+)
-; (global-git-gutter+-mode 1)
+ (require 'magit)
+ (add-hook 'magit-mode-hook 'magit-load-config-extensions)
+ (require 'git-gutter-fringe+)
+ (global-git-gutter+-mode 1)
 
 
 ;; elpy & python
@@ -74,9 +74,14 @@
 
 ;; neotree
 (require 'neotree)
+(setq-default neo-smart-open t)
 
 ;; don't create empty lines at the top of neotree buffer
 (defun neo-buffer--newline-and-begin ()
   (unless (= (point) (point-min))
     (newline)
     (beginning-of-line)))
+
+
+;; python
+(add-hook 'python-mode-hook (lambda () (linum-mode 1)))
