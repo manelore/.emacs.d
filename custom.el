@@ -12,7 +12,8 @@
  '(neo-smart-open t)
  '(neo-theme (quote nerd))
  '(neo-window-width 30)
- '(scroll-bar-mode nil))
+ '(scroll-bar-mode nil)
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

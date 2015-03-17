@@ -35,6 +35,10 @@
 (require 'yafolding)
 (yafolding-mode)
 
+;; flycheck
+(require 'flycheck)
+(global-flycheck-mode 1)
+
 ;; saveplace
 (require 'saveplace)
 (setq save-place-file "~/.emacs.d/saved-places")
@@ -56,13 +60,13 @@
 (add-to-list 'auto-mode-alist '("[.]rpy$" . python-mode))
 (add-to-list 'auto-mode-alist '("[.]tac$" . python-mode))
 (put 'test-case-name 'safe-local-variable (lambda (x) t))
+(add-hook 'python-mode-hook (lambda () (linum-mode 1)))
 
 ;; dired
 ; (require 'dired)
 ; (require 'dired-x)
 ; (setq dired-omit-files (concat dired-omit-files "\\|^\\..+$"))
 ; (setq-default dired-omit-files-p t)
-
 
 ;; snippets
 (require 'yasnippet)
@@ -81,7 +85,3 @@
   (unless (= (point) (point-min))
     (newline)
     (beginning-of-line)))
-
-
-;; python
-(add-hook 'python-mode-hook (lambda () (linum-mode 1)))

@@ -48,7 +48,8 @@
     yafolding
     yaml-mode
     yasnippet
-  ))
+    flycheck
+    ))
 
 (unless (cl-every 'package-installed-p my-packages)
   (install-my-packages))
