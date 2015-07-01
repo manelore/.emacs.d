@@ -85,3 +85,24 @@
   (unless (= (point) (point-min))
     (newline)
     (beginning-of-line)))
+
+
+;; jade
+(require 'jade-mode)
+
+;; scss
+(require 'flymake-sass)
+(add-hook 'sass-mode-hook 'flymake-sass-load)
+(add-hook 'scss-mode-hook 'flymake-sass-load)
+(add-hook 'scss-mode-hook
+  (lambda () 
+    (setq tab-width 2)
+    (setq c-basic-offset 2) 
+    (setq indent-tabs-mode t)))
+
+;; js
+(add-hook 'js-mode-hook
+  (lambda ()
+    (setq tab-width 2)
+    (setq js-indent-level 2)
+    (setq indent-tabs-mode nil)))

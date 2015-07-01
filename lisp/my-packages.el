@@ -49,6 +49,11 @@
     yaml-mode
     yasnippet
     flycheck
+    jade-mode
+    haml-mode
+    sass-mode
+    flymake-sass
+    scss-mode
     ))
 
 (unless (cl-every 'package-installed-p my-packages)
