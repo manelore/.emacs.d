@@ -106,3 +106,6 @@
     (setq tab-width 2)
     (setq js-indent-level 2)
     (setq indent-tabs-mode nil)))
+
+;; jinja2
+(require 'jinja2-mode)

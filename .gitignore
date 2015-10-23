@@ -12,3 +12,5 @@ ergoemacs-extras
 session.*
 saved-places
 *~
+ido.last
+smex-items

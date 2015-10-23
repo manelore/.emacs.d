@@ -4,7 +4,7 @@
 (defvar default-frame-width 132 "Default frame width")
 
 (set-frame-size (selected-frame) (- default-frame-width 1) default-frame-height)
-(load-theme 'base16-default t)
+(load-theme 'hc-zenburn t)
 
 (defface font-lock-self-class-face
     '((default (:foreground "light slate gray")))

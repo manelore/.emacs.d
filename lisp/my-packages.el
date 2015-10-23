@@ -24,6 +24,10 @@
 (setq my-packages
   '(
     base16-theme
+    smyx-theme
+    boron-theme
+    badger-theme
+    hc-zenburn-theme
     elpy
     find-file-in-project
     git-commit-mode
@@ -54,6 +58,7 @@
     sass-mode
     flymake-sass
     scss-mode
+    jinja2-mode
     ))
 
 (unless (cl-every 'package-installed-p my-packages)
