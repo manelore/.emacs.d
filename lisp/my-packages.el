@@ -59,6 +59,9 @@
     flymake-sass
     scss-mode
     jinja2-mode
+    eyebrowse
+    window-numbering
+    spaceline
     ))
 
 (unless (cl-every 'package-installed-p my-packages)

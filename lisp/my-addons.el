@@ -109,3 +109,23 @@
 
 ;; jinja2
 (require 'jinja2-mode)
+
+(require 'eyebrowse)
+(eyebrowse-mode t)
+
+(require 'spaceline)
+(require 'spaceline-segments)
+(require 'spaceline-config)
+
+(setq powerline-default-separator 'wave)
+
+(spaceline-emacs-theme)
+(spaceline-toggle-evil-state-off)
+(spaceline-toggle-workspace-number-on)
+(spaceline-toggle-window-number-off)
+(spaceline-toggle-buffer-size-off)
+(spaceline-toggle-minor-modes-off)
+(spaceline-toggle-org-pomodoro-off)
+(spaceline-toggle-org-clock-off)
+(spaceline-toggle-nyan-cat-off)
+(spaceline-toggle-battery-off)

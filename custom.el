@@ -37,4 +37,8 @@
  '(neo-file-link-face ((t (:foreground "LightCyan1"))))
  '(neo-root-dir-face ((t (:foreground "LightPink3" :weight bold))))
  '(region ((t (:background "#404144"))))
+ '(spaceline-evil-normal ((t (:background "cyan3" :foreground "#3E3D31" :inherit (quote mode-line)))))
+ '(spaceline-highlight-face ((t (:background "cyan3" :foreground "#3E3D31" :inherit (quote mode-line)))))
+ '(spaceline-modified ((t (:background "LightPink2" :foreground "#3E3D31" :inherit (quote mode-line)))))
+ '(spaceline-unmodified ((t (:background "cyan3" :foreground "#3E3D31" :inherit (quote mode-line)))))
  '(vertical-border ((t (:foreground "gray22")))))
