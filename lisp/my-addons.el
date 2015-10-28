@@ -119,13 +119,38 @@
 
 (setq powerline-default-separator 'wave)
 
-(spaceline-emacs-theme)
-(spaceline-toggle-evil-state-off)
-(spaceline-toggle-workspace-number-on)
-(spaceline-toggle-window-number-off)
-(spaceline-toggle-buffer-size-off)
-(spaceline-toggle-minor-modes-off)
-(spaceline-toggle-org-pomodoro-off)
-(spaceline-toggle-org-clock-off)
-(spaceline-toggle-nyan-cat-off)
-(spaceline-toggle-battery-off)
+(require 'pyvenv)
+(spaceline-define-segment pyvenv-name
+  "Python virtualenv name"
+  pyvenv-virtual-env-name
+  :enabled "testtesttest")
+
+(spaceline-toggle-pyvenv-name-on)
+
+(spaceline-install
+
+ '(((workspace-number)
+   :fallback evil-state
+   :separator "|"
+   :face highlight-face)
+  anzu
+  (buffer-modified buffer-id remote-host)
+  major-mode
+  (pyvenv-name
+   :when active
+   :face highlight-face)
+  ((flycheck-error flycheck-warning flycheck-info)
+   :when active)
+  (erc-track :when active)
+  (version-control :when active)
+  (org-pomodoro :when active)
+  (org-clock :when active)
+  nyan-cat)
+
+ `(selection-info
+   ((point-position
+     line-column)
+    :separator " | ")
+   (global :when active)
+   buffer-position
+   hud))
